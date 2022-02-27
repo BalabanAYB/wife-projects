@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+*, 
+::after,
+::before {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+   font-family: 'Asap', sans-serif;
+}
+
+.reset-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.reset-link {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* header */
+.container {
+   max-width: 1169px;
+   margin: 0 auto;
+}
+
+.one-header {
+   padding: 12px 0 14px 0;
+   background-color: #0E77AF;
+}
+
+.flex {
+   display: flex;
+}
+
+.flex-container {
+   justify-content: space-between;
+}
+
+.header-icons{
+ align-items: flex-start;
+}
+
+.header-img-icons:not(:last-child) {
+   margin-right: 21px;
+}
+
+.mail-link {
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 14px;
+   color: #FFFFFF;
+}
+
+.two-header {
+   padding: 20px 0 24px 0;
+}
+
+.menu {
+  align-items: center;
+  
+}
+
+.wrapper-two-header {
+   justify-content: space-between;
+}
+
+.menu-link {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 16px;
+   text-transform: uppercase;
+   color: #000000;
+}
+
+.menu-link:hover {
+   font-weight: bold;
+}
+
+.menu-link:not(.last-child) {
+   margin-right: 25px;
+}
+
+.wrapper-info-us{
+   align-items: center;
+   justify-content: space-between;
+}
+
+.wrapper-tel {
+   flex-direction: column;
+}
+
+.call-info-us {
+   margin-bottom: 1px;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 16px;
+   color: #7D7D7D;
+}
+
+.call-info-us-telephone {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 18px;
+}
+
+.telephone-icon {
+   margin-right: 13px;
+}
+
+/* promo */
+.promo {
+   height: 647px;
+   padding: 151px 0 136px 0;
+   background-image: url('../img/bg-promo.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.wrapper-promo-parent {
+   width: 100%;
+   justify-content: flex-end;
+}
+
+.promo-name {
+   font-size: 28px;
+   font-weight: 400;
+   line-height: 32px;
+}
+
+.promo-name-promise {
+   font-size: 84px;
+   font-weight: 700;
+   line-height: 96px;
+}
+
+.promo-descr {
+   margin-bottom: 40px;
+   font-size: 32px;
+   font-weight: 400;
+   line-height: 42px;
+}
+
+.promo-btn {
+   padding: 26px 63px 25px 70px;
+   background-color: #B4141B;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 23px;
+   text-align: center;
+   color: white;
+   cursor: pointer;
+}
+
+.promo-btn:hover {
+   padding: 26px 63px 25px 70px;
+   background-color: #db3d44;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 23px;
+   text-align: center;
+   color: white;
+}
+
+/* section - about us and why us */
+.section-title {
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 37px;
+}
+
+.about-us-why-us {
+   padding-top: 77px;
+}
+
+.about-us {
+   margin-right: 50px;
+}
+
+.abous-us-title {
+   margin-bottom: 57px;
+}
+
+.about-us-img {
+   display: block;
+   margin-bottom: 38px;
+}
+
+.about-us-descr {
+   width: 772px;
+   height: 223px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+}
+
+.why-us-title {
+   margin-bottom: 56px;
+}
+
+.why-us-subtitle {
+   margin-bottom: 17px;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 28px;
+   color: #0E77AF;   
+}
+
+.subtitle-1::after{
+   content: url('../img/about-us/1.svg');
+   margin-left: 114px;
+}
+
+.subtitle-2::after{
+   content: url('../img/about-us/2.svg');
+   margin-left: 184px;
+}
+
+.subtitle-3::after{
+   content: url('../img/about-us/3.svg');
+   margin-left: 122px;
+}
+
+.why-us-descr {
+   width: 284px;
+   margin-bottom: 14px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25px;
+}
+
+.common-word {
+   display: block;
+   font-size: 12px;
+   font-weight: 700;
+   color: #7D7D7D;
+}
+
+.why-us-list-item-1 {
+   padding: 40px 18px 32px 37px;
+   width: 350px;
+   min-height: 240px;
+   background: linear-gradient(180deg, #F8F8F8 0%, #F7F7F7 100%);
+}
+
+.why-us-list-item-2 {
+   padding: 45px 22px 35px 37px;
+   width: 350px;
+   min-height: 243px;
+   background: linear-gradient(180deg, #F3F3F3 2.58%, #F3F3F3 100%);
+}
+
+.why-us-list-item-3 {
+   padding: 52px 22px 30px 37px;
+   width: 350px;
+   min-height: 243px;
+   background: linear-gradient(180deg, #FCFCFC 0%, #F7F7F7 100%);
+}
+
+
+/* benefits */
+.benefits {
+   padding: 135px 0 130px 0;
+}
+
+.benefits-flex-container {
+   justify-content: center;
+}
+
+.medical-benefits {
+   width: 887px;
+   height: 511px;
+   background-image: url('../img/benefits-bg.jpg');
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.medical-benefits-list-item {
+   padding: 35px 0 36px 34px;
+   width: 474px;
+   height: 96px;
+   background: #0E77AF;
+   opacity: 0.9;
+   font-size: 22px;
+   font-weight: 700;
+   color: #FFFFFF;
+   border-radius: 15px 0 0 15px;
+
+}
+
+.medical-benefits-list-item:not(:last-child) {
+   margin-bottom: 21px;
+}
+
+.white-list-item{
+   background: rgba(255, 255, 255, 0.9);
+   color: #000;
+}
+
+
+.medical-benefist-description {
+   padding: 77px 0 0 53px;
+}
+
+.benefits-title {
+   margin-bottom: 10px;
+}
+
+.benefits-descr {
+   margin-bottom: 47px;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 28px;
+   color: #9B9B9B;
+}
+
+.medical-benefits-description-list {
+   width: 474px;
+   height: 196px;
+   margin-bottom: 40px;
+}
+
+.medical-benefits-description-list-item {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+   list-style: disc;
+}
+
+.medical-benefits-description-list-item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.benefits-btn, 
+.security-btn {
+   width: 104px;
+   height: 35px;
+   padding: 6px 8px;
+   background: #B4141B;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 23px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   cursor: pointer;
+}
+
+/* our-services-and-security */
+.our-services-and-security {
+   padding-bottom: 167px;
+}
+
+.security {
+   padding-left: 97px;
+}
+
+.our-services-title {
+   margin-bottom: 9px;
+}
+
+.our-services-descr,
+.security-subtitle {
+   margin-bottom: 67px;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 28px;
+   color: #9B9B9B;
+}
+
+.our-services-list-item {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 28px;
+   color: #0E77AF;
+}
+
+.coding-services-descr {
+   margin: 45px 0 10px 0;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+   color: #000;
+}
+
+.codind-services-img {
+   margin: 33px 20px 42px 0;
+}
+
+.why-us-word {
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 29px;
+   color: #7D7D7D;
+}
+
+.rectangle {
+   border-bottom: 1px solid #979797;
+}
+
+.pozition {
+   position: relative;
+   margin-bottom: 26px;
+}
+
+.pozition-3 {
+   margin-top: 31px;
+}
+
+.pozition-1::after {
+   content: url('../img/our-services/plus.svg');
+   position: absolute;
+   right: 0;
+}
+
+.pozition-2::after {
+   content: url('../img/our-services/minus.svg');
+   position: absolute;
+   right: 0;
+}
+
+.pozition-3::after {
+   content: url('../img/our-services/minus.svg');
+   position: absolute;
+   right: 0;
+}
+
+.security-title {
+   margin-bottom: 9px;
+}
+
+.security-subtitle {
+   margin-bottom: 47px;
+}
+
+.security-img {
+   margin-bottom: 58px;
+}
+
+.security-descr {
+   margin-bottom: 40px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+}
+
+/* testimonials */
+.testimonials {
+   padding: 148px 0 147px 0;
+   background-color: #0E77AF;
+}
+
+.testimonials-flex-container {
+   justify-content: space-between;
+}
+
+.testimonials-title {
+   margin-bottom: 9px;
+   color: white;
+}
+
+.testimonials-name {
+   margin-bottom: 92px;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 28px;
+   color: white;
+}
+
+.number {
+   margin-bottom: 1px;
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 73px;
+   color: white;
+}
+
+.testimonials-payment {
+   font-size: 28px;
+   font-weight: 400;
+   line-height: 32px;
+   color: white;
+}
+
+.testimonials-payment:not(:last-child) {
+   margin-bottom: 56px;
+}
+
+.testimonials-block-2 {
+   padding: 75px 45px 82px 59px;
+   background-color:  #FFFFFF;
+}
+
+.testimonials-subtitle {
+   margin-bottom: 17px;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 23px;
+}
+
+.testimonials-descr {
+   margin-bottom: 54px;
+   height: 87px;
+   width: 630px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+}
+
+.testimonials-author {
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 18px;
+}
+
+/* information-form */
+.information-form {
+   padding: 125px 0 228px 0;
+}
+
+.information-form-flex-container {
+   justify-content: space-between;
+}
+
+.information-form-block-1 {
+   padding-top: 54px;
+}
+
+.for-physicians {
+   margin-bottom: 26px;
+}
+
+.medical-person-title {
+   margin-bottom: 9px;
+}
+
+.for-physicians-text {
+   margin-bottom: 24px;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 28px;
+   color: #9B9B9B;
+}
+
+.for-physicians-descr {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+   color: #595959;
+}
+
+.common-descr {
+   margin-bottom: 24px;
+}
+
+.information-form-block-2 {
+   padding: 54px 41px 52px 48px;
+   background: linear-gradient(180deg, #FCFCFC 0%, #F7F7F7 100%);
+}
+
+.appointment-form-title {
+   margin-bottom: 46px;
+}
+
+form {
+   flex-direction: column;
+   align-items: center;
+}
+
+.appoitment-form-submit {
+   padding-left: 13px;
+   margin-bottom: 37px;
+   width: 388px;
+   height: 53px;
+   border: 2px solid #E2E2E2;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 16px;
+   color: #4A4A4A;
+}
+
+.sumbit-4 {
+   margin-bottom: 46px;
+}
+
+.parent-btn {
+   margin-right: 47px;
+   justify-content: flex-end;
+}
+
+/* footer */
+
+.footer-flex-container {
+   justify-content: space-between;
+}
+
+.footer-one {
+   position: relative;
+   padding: 208px 0 127px 0;
+   background-color: #4A4A4A;
+}
+
+.navigation-list {
+   position: absolute;
+   top: -110px;
+}
+
+.navigation-list-item-1 {
+   padding: 40px 0 0 16px;
+   width: 380px;
+   height: 196px;
+   background-color: #5F5F5F;
+}
+
+.navigation-list-item-2 {
+   padding: 40px 0 0 16px;
+   width: 410px;
+   height: 196px;
+   background-color: #6C6C6C;
+}
+
+.navigation-list-item-3 {
+   padding: 40px 0 0 16px;
+   width: 380px;
+   height: 196px;
+   background-color: #7B7B7B;
+}
+
+.navigation-title {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 28px;
+   color: #FFFFFF;
+}
+
+.navigation-title-1 {
+   margin: 0 0 11px 67px;
+}
+
+.navigation-title-2 {
+   margin: 0 0 11px 72px;
+}
+
+.navigation-title-3 {
+   margin: 0 0 11px 75px;
+}
+
+.navigation-descr {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+   color: #FFFFFF;
+}
+
+.style-descr-1::before {
+   content: url('../img/map.svg');
+   margin-right: 46px;
+}
+
+.style-descr-2::before {
+   content: url('../img/tel.svg');
+   margin-right: 48px;
+}
+
+.style-descr-3::before {
+   content: url('../img/mail.svg');
+   margin-right: 50px;
+}
+
+.footer-info-title {
+   margin-bottom: 45px;
+   color: #FFFFFF;
+}
+
+.info-title-2 {
+   margin-bottom: 53px;
+}
+
+.network-link:not(:last-child){
+   margin-right: 33px;
+}
+
+.footer-info-descr {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+   color: #FFFFFF;
+}
+
+.info-descr-2 {
+   width: 334px;
+   height: 145px;
+}
+
+.footer-two {
+   padding: 42px 0 26px 0;
+   background-color: #363636;
+}
+
+.copyright {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 29px;
+   color: #FFFFFF;
+}

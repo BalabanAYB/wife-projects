@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white-color: #ffffff;
+    --blue-color:  #3F2AFF;
+    --black-color: #2E2B44;
+    --grey-color: #666666;
+    --picker-color: #85859B;
+    --gunmetal-color: #2E2B44;  
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.section-descr {
+    color: var(--grey-color);
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.list-reset {
+   list-style: none; 
+   text-decoration: none;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1134px;
+}
+
+header {
+    min-height: 80px;
+    background: var(--blue-color);
+}
+
+.wrapper-header {
+    padding: 27px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-link {
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--white-color);
+}
+
+.menu-link:not(.last-child) {
+    margin-right: 56px;
+}
+
+.burger-block {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+  }
+  
+.burger {
+    width: 25px;
+    height: 2px;
+    background-color: var(--white-color);
+    margin: 6px 0;
+  }
+
+.hero {
+    position: relative;
+    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+    padding-bottom: 12px;
+    height: 620px;
+    min-height: 240px;
+}
+
+.hero-wrapper {
+    align-items: center;
+}
+
+.hero-info {
+    max-width: 459px;
+    width: 100%;
+    margin: 85px 0;
+}
+
+.hero-title {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+    color: var(--white-color);
+}
+
+.hero-descr {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--white-color);
+}
+
+.hero-btn {
+    margin-top: 70px;
+    padding: 24px 75.5px;
+    font-size: 18px
+}
+
+.img-hero {
+    max-width: 632px;
+    width: 100%;
+    height: 593px;
+    margin-top: 15px;
+    background-image: url('../img/bg-large.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.benefits-block {
+    max-width: 775px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.benefits-texture {
+    margin-right: 30px;
+}
+
+.benefits-img {
+    margin-right: 30px;
+    align-self: center;
+}
+
+.benefits-title {
+    max-width: 380px;
+}
+
+.benefits-info {
+    align-items: center;
+}
+
+.benefits-subdescr {
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--grey-color);
+}
+
+.teachers {
+    background-color: #212133;
+}
+
+.teachers-title {
+    color: var(--white-color);
+}
+
+.teacher-img {
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+
+.teacher-descr {
+    margin-top: 30px;
+}
+
+.teachers-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: var(--white-color);
+}
+
+.teachers-quotation {
+    font-weight: 400;
+    line-height: 24px;
+    color: #85859B;
+}
+
+.courses-card {
+    position: relative;
+    font-size: 0;
+    z-index: 3;
+}
+
+.courses-time {
+    padding: 13px 0 3px;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--white-color);
+}
+
+.courses-time::before {
+    position: absolute;
+    top: 8px;
+    left: -27px;
+    content: url('../icon/time.svg');
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+}
+
+.wrapper-info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 376px;
+    padding: 30px;
+    background: #EDF0F9;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.courses-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #212133;   
+}
+.courses-descr {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--grey-color);
+}
+.courses-btn {
+    font-size: 16px;
+    padding: 21px 59px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.dark-footer {
+    padding: 28px 0;
+    height: 80px;
+    background: #2E2B44;;
+}
+
+.wrapper-icons {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon:not(.last-child) {
+ margin-right: 30px;
+}
+
+.light-footer {
+    background-color: var(--white-color);
+}
+
+.footer-logo {
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--black-color);
+}
+
+.footer-letter {
+    color: var(--blue-color);
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+    .container {
+        max-width: 690px;
+    }
+
+    .hero-info {
+        margin: 85px 0;
+        max-width: 385px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .img-hero {
+        max-width: 330px;
+        width: 100%;
+        height: 350px;
+        margin-top: 15px;
+        background-image: url('../img/bg-medium.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .benefits-img {
+        margin-bottom: 15px;
+    }
+
+    .benefits-texture {
+        align-self: center;
+        width: 211px;
+        height: 187px;
+    }
+
+    .menu-link:not(.last-child) {
+        margin-right: 40px;
+    }
+
+    .hero-descr {
+        margin-top: 30px;
+    }
+
+    .wrapper-info {
+        height: 550px;
+    }
+
+    .courses-subtitle {
+        line-height: 24px;
+    }
+
+    .benefits-info {
+        flex-direction: column;
+    }
+
+    .teacher-img {
+        width: 100%;
+    }
+
+    .teachers-card {
+        margin-bottom: 30px;
+    }
+
+    .courses-btn {
+        padding: 20px 55px;
+    }
+}
+
+@media (max-width: 576px)  {
+    .container {
+        max-width: 510px;
+    }
+
+    .wrapper-header {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        height: 567px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .img-hero {
+      display: none;
+    }
+
+    .menu-link:not(.last-child) {
+        margin-right: 52px;
+    }
+
+    .benefits-img {
+        margin-bottom: 15px;
+    }
+
+    .benefits-texture {
+        align-self: center;
+        width: 150px;
+        height: 134px;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .wrapper-info {
+        height: 550px;
+    }
+
+    .courses-subtitle {
+        line-height: 24px;
+    }
+
+    .benefits-info {
+        flex-direction: column;
+    }
+
+    .teachers-card {
+        margin-bottom: 30px;
+    }
+
+    .courses-btn {
+        padding: 20px 48px;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .container {
+        max-width: 290px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger-block  {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .logo-img {
+        margin-bottom: 0px;
+    }
+
+    .hero {
+        height: 433px;
+    }
+
+    .img-hero {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .hero-info {
+        margin: 50px 0;
+    }
+
+    .hero-descr {
+        margin-top: 15px;
+    }
+
+    .hero-btn {
+        margin-top: 50px;
+        padding: 20px 53px;
+    }
+
+    .benefits-info {
+        flex-direction: row;
+    }
+
+    .benefits-texture {
+        display: none;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+
+    .benefits-title {
+        margin-bottom: 15px;
+    }
+
+    .benefits-info {
+        margin-bottom: 30px;
+    }
+
+    .wrapper-info {
+        height: 473px;
+    }
+}

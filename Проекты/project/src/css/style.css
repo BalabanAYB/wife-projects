@@ -1,0 +1,38 @@
+body {
+   background-color: rgb(255, 255, 224);
+   margin-left: 20px;
+}
+
+.title {
+   font-family: 'times new roman', palatino linotype, athena, tahoma;
+   font-size: 16px;
+   text-align: center;
+   color: rgb(204,0,0);
+   margin-top: 30px;
+}
+
+.text {
+   font-size: 14px;
+}
+
+.chapter {
+   font-size: 16px;
+   color: rgb(204,0,0);
+   font-weight: bold;
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 12px;
+}
+
+p {
+   font-size: 13px;
+}
+
+span {
+   font-style: italic;
+}
+
+.picture {
+   display: block;
+   margin: 0 auto;
+}

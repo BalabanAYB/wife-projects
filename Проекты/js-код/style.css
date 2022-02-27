@@ -1,0 +1,63 @@
+body {
+  padding: 70px 36px 0 92px;
+  background: #424242;
+}
+
+.wrapper_custom-checkbox {
+  padding: 21px 29px 29px 30px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 137px;
+}
+
+
+input {
+  display: none;
+}
+
+.custom_inp  {
+  user-select: none;
+  cursor: pointer;
+}
+
+.custom_inp span {
+  position: relative;
+}
+
+span {
+  display: block;
+  padding-left: 23px;
+}
+
+span:not(.last) {
+  margin-bottom: 20px;
+}
+
+
+.custom_inp span::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+
+.custom_inp span::after {
+  content: url('./img/Rectangle\ 99.svg');
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  opacity: 0;
+}
+
+.custom_inp input:checked + span::after{
+  opacity: 1;
+} 
+
+
+.custom_inp input:checked + span::before {
+  border: 1px solid #CCB26E;
+} 
+
